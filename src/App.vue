@@ -14,6 +14,16 @@ export default {
   components: {
     Header
   },
+
+  data(){
+    return{
+      tasks:[]
+    }
+  },
+  created(){
+    this.tasks=[]
+  },
+
 }
 </script>
 
