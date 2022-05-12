@@ -1,12 +1,12 @@
 <template>
 <div class="container">
 <Header title= "Track Traker"/>
-<Tasks :tasks= "tasks"/>
+<Tasks v-bind:tasks= "tasks"/>
 </div>
 
 
   
-</template>
+</template> 
 
 <script>
 import Header from './components/Header'
@@ -15,16 +15,35 @@ export default {
   name: 'App',
   components: {
     Header,
-    Tasks
+    Tasks, 
   },
 
   data(){
     return{
-      tasks:[]
+      tasks: []
     }
   },
   created(){
-    this.tasks=[]
+    this.tasks=[
+      {
+          id:1,
+          text:"Doctors",
+          day:"march 5th at 1;30PM",
+          reminder:true,
+        },
+        {
+          id:2,
+          text:"food  sho",
+          day:"march 4th at 11a.m",
+          reminder:true,
+        },
+        {
+          id:3,
+          text:"meeting at school",
+          day:"march 8 at 3;60PM",
+          reminder:false,
+        },
+    ]
   },
 
 }
