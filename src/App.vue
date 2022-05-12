@@ -43,6 +43,12 @@ export default {
           day:"march 8 at 3;60PM",
           reminder:false,
         },
+        {
+          id:4,
+          text:"monday",
+          day:"march 8 at 3;00a.m",
+          reminder:true,
+        },
     ]
   },
 
